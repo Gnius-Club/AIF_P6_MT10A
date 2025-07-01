@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P6-TM10A</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 10A 6to Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje</strong>
+                                    <ul>
+                                        <li>Que los estudiantes comprendan conceptualmente qué es el Aprendizaje por Refuerzo (Reinforcement Learning - RL) y en qué se diferencia del Aprendizaje Supervisado. Que identifiquen los componentes clave de RL (Agente, Entorno, Acción, Recompensa). El objetivo principal es que diseñen una simulación de un escenario de RL, definiendo qué acciones puede tomar el robot y qué constituye una "recompensa" o "penalización" visual.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase</strong>
+                                    <ul>
+                                        <li>⚡Saludo de I.A. con todos</li>
+                                        <li>⚡A.I. GYM (Análisis Profundo)</li>
+                                        <li>⚡VIBE CODING (Diseño de la Simulación de RL)</li>
+                                        <li>⚡ANÁLISIS DEL CONCEPTO Y PLANIFICACIÓN DE PRUEBAS</li>
+                                        <li>⚡GNIUS STORM (Cierre de Sesión A)</li>
+                                    </ul>
+                                    <strong>Entregable Clave</strong>
+                                    <ul>
+                                        <li>"Protocolo de Simulación de RL" documentado por cada equipo, listo para la Sesión 10B.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso al entorno de programación Python.</li>
+                                        <li>Robots XGO V2 (1 por cada 4 estudiantes), cargados.</li>
+                                        <li>Tarjetas de señales (una verde para "go/ok" y una roja para "stop").</li>
+                                        <li>Presentación de diapositivas.</li>
+                                        <li>Chat de Agente Gnius (Xolo) activo.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna)</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet y entorno Python.</li>
+                                                <li>Asegurar carga de los robots XGO V2.</li>
+                                                <li>Tener las tarjetas de recompensa/penalización listas.</li>
+                                                <li>Tener la presentación de diapositivas lista.</li>
+                                                <li>Probar el chat Agente Gnius (Xolo).</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización</strong> Revisar el flujo de la sesión, diálogos y tiempos.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 2 minutos</h2>
+                <p><strong>Propósito:</strong> Crear un ambiente acogedor y guiar a los estudiantes para que activen y personalicen la interacción con el agente de IA, Xolo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Instrucción Inicial ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) Da la bienvenida a los estudiantes y guíalos para que activen a Xolo en el chat.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, Entrenadores de IA! 👋 ¡Bienvenidos a una nueva misión! Hoy vamos a explorar cómo un robot puede aprender por sí mismo, como un bebé. Antes de empezar, vamos a activar a nuestro amigo Xolo. Por favor, salúdenlo en el chat y díganle su nombre y cuáles son sus gustos e intereses. Por ejemplo 'Hola Xolo, soy Isabel y me gustan los videojuegos y aprender cosas nuevas'.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Monitoreo y Verificación ⏰ 1 minuto</h3>
+                            <p>Asegúrate de que todos los estudiantes hayan recibido una respuesta de Xolo para continuar.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente, Xolo está listo para aprender con nosotros! Asegúrense de que todos hayan escrito su nombre y sus gustos. Si Xolo no les ha respondido, ¡avísenme!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2 A.I. GYM (Análisis Profundo) ⏰ 12 minutos</h2>
+                <p><strong>Propósito</strong> Introducir el concepto de Aprendizaje por Refuerzo (RL), sus 4 componentes clave y su diferencia con el Aprendizaje Supervisado.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentación Conceptual y Comando para Xolo ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) Presenta el misterio de aprender por prueba y error, y luego instruye a los alumnos sobre cómo pedirle la explicación detallada a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Muy bien! Ahora que todos están listos, vamos al A.I. GYM. Equipos, hemos 'enseñado' a nuestra IA mostrándole ejemplos (aprendizaje supervisado). Le dijimos 'esto es un stop', 'esto es un premio rojo'. Pero, ¿cómo aprende un bebé a caminar? Nadie le da un manual de instrucciones. Simplemente prueba cosas. Se cae (penalización), se levanta, intenta de nuevo. Cuando da un paso con éxito (recompensa), su cerebro lo recuerda. ¿Podríamos hacer que un robot aprenda de la misma manera, por prueba y error?</p>
+                                <p class="dialogue assistant">Para que la explicación sea personalizada para ustedes, escriban en el chat el siguiente comando: 'Mi perfil es [escribe aquí tu perfil] y quiero que me enseñes sobre el Aprendizaje por Refuerzo (RL)'.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Monitoreo de Interacción y Síntesis ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositivas 4 y 5) Monitorea a los alumnos mientras interactúan con Xolo y resume los puntos clave que están aprendiendo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Mientras los alumnos interactúan con Xolo) ¡Fantástico! Xolo les está explicando que el Aprendizaje por Refuerzo es aprender sin un maestro, a base de premios y castigos. Les está presentando los 4 elementos clave del RL: Agente, Entorno, Acción y Recompensa.</p>
+                                <p class="dialogue assistant">Fíjense en cómo les explica la gran diferencia con lo que hicimos antes: ahora la IA aprende de las consecuencias de sus acciones, no de etiquetas que le damos nosotros.</p>
+                                <p class="dialogue assistant">Si algo no queda claro, ¡recuerden que pueden preguntarle directamente a Xolo! Prueben con <br><strong>'¿Cuál es la diferencia entre RL y Aprendizaje Supervisado?'</strong><br><strong>'¿El "Agente" siempre es un robot?'</strong><br><strong>'¿La "Recompensa" siempre es un objeto físico?'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3 VIBE CODING (Diseño de la Simulación de RL) ⏰ 14 minutos</h2>
+                <p><strong>Propósito</strong> Permitir a los estudiantes diseñar en equipo las reglas de un "juego" que simule un escenario de Aprendizaje por Refuerzo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Instrucción del Profesor ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Motiva a los equipos a convertirse en "Diseñadores de Juegos de IA" y a definir las reglas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Muy bien, con esos conceptos claros, a diseñar el juego! Hoy no vamos a implementar un algoritmo de RL real (¡son muy complejos!). En su lugar, vamos a simular un escenario de RL. Como equipo de 'Diseñadores de Juegos de IA', definan las reglas del juego para su robot. ¿Qué acciones puede tomar y cómo gana puntos? Si no se les ocurre nada, ¡no hay problema! Escriban en el chat con Xolo el comando exacto: 'Exploremos ideas juntos'.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Lluvia de Ideas y Diseño del Escenario ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositivas 7 y 8) Guía la discusión del equipo para definir las reglas de su simulación y ver un ejemplo de pseudo-código.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Discutan en su equipo de 4. Definan las reglas: <strong>El Objetivo</strong> (ej. encontrar la tarjeta verde), <strong>El Entorno</strong> (ej. una mesa con una tarjeta verde y una roja), <strong>Las Acciones</strong> (ej. solo girar a la izquierda o derecha), y <strong>La Recompensa/Penalización</strong> (ej. ver la tarjeta verde es premio, ver la roja es castigo). ¿Y qué hará el robot para celebrar su recompensa? ¡Un baile!</p>
+                                <p class="dialogue assistant">Xolo puede ayudarles a traducir esta lógica a un pseudo-código como este:</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;"># Vibe de la Simulación de RL
+import xgo, time, ai, random
+# ... (inicialización) ...
+
+# 1. El AGENTE elige una ACCIÓN al azar
+accion_elegida = random.choice(['izquierda', 'derecha'])
+
+# 2. El AGENTE ejecuta la ACCIÓN
+if accion_elegida == 'izquierda':
+    xgo.turn('left')
+else:
+    xgo.turn('right')
+time.sleep(2)
+
+# 3. El AGENTE observa el ENTORNO y busca una RECOMPENSA
+contenido = ai.get_card_content()
+if contenido == "go": # Tarjeta verde
+    # ¡RECOMPENSA!
+    xgo.swing() 
+elif contenido == "stop": # Tarjeta roja
+    # ¡PENALIZACIÓN!
+    xgo.sit()</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                <h2>⚡ Actividad 4 ANÁLISIS DEL CONCEPTO Y PLANIFICACIÓN DE PRUEBAS ⏰ 7 minutos</h2>
+                <p><strong>Propósito</strong> Fomentar el análisis de la simulación y la creación de un protocolo de pruebas que prepare la discusión clave de la siguiente sesión.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Planificación de Pruebas (Actividad Clave) ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) Guía a los equipos para que analicen su diseño y creen su entregable: un "Protocolo de Simulación de RL".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente diseño de juego! Ahora, analicen su plan y creen su 'Protocolo de Simulación de RL' para la próxima sesión. Recuerden alternar quién programa para que todos tengan la oportunidad de probar. El protocolo debe incluir:</p>
+                                <ul>
+                                    <li><p class="dialogue assistant"><strong>1. Preparación del Entorno:</strong> Colocar la tarjeta verde a la derecha y la roja a la izquierda.</p></li>
+                                    <li><p class="dialogue assistant"><strong>2. Prueba del Código:</strong> Ejecutar el código y ver que el robot gira al azar.</p></li>
+                                    <li><p class="dialogue assistant"><strong>3. Observación:</strong> Verificar que, si gira hacia el verde, hace el baile de la victoria, y si gira hacia el rojo, hace el gesto de derrota.</p></li>
+                                    <li><p class="dialogue assistant"><strong>4. Pregunta para la Discusión:</strong> Si después de 100 intentos, la IA se da cuenta de que girar a la derecha le da más "premios", ¿qué acción creen que empezaría a elegir más a menudo? Anoten su respuesta.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5 GNIUS STORM (Cierre de Sesión A) ⏰ 5 minutos</h2>
+                <p><strong>Propósito</strong> Realizar un cierre dinámico donde los equipos comparten sus diseños de juegos de RL y se genera expectación para la sesión práctica.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Compartir Planes ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 10) Pide a un portavoz de cada equipo que comparta brevemente su "juego".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Muy bien, equipos! Para cerrar, un portavoz de cada equipo va a describir brevemente su "juego" de RL: cuáles son las acciones posibles para su robot y cuál es el "premio" (recompensa) que debe encontrar. ¡Queremos escuchar esas reglas!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Cierre y Próximos Pasos ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 11) Concluye la sesión, validando el trabajo de los estudiantes y adelantando la discusión clave de la siguiente sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelentes diseños de juegos! Han creado un escenario para explorar una de las ideas más poderosas de la IA: aprender de la experiencia. En la próxima sesión, no solo ejecutarán esta simulación, sino que discutiremos la pregunta más importante: ¿cómo podría la IA pasar de elegir al azar a elegir 'inteligentemente' para ganar siempre el juego? ¡Prepárense para pensar como un algoritmo de aprendizaje!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
